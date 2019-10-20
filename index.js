@@ -3,16 +3,16 @@ const superagent = require('superagent')
 const moment = require('moment')
 const TOKEN = '951375933:AAFl8TaOZdwi_KsmDXhvVmeHMtkyoS1q8wc'
 const TelegramBot = require('node-telegram-bot-api')
-const options = {
-	webHook: {
-		port: process.env.PORT
-	}
+const options =// {
+//	webHook: {
+//		port: process.env.PORT
+//	}
 }
 
 const url = 't.me/sedcxsaebot'
-const bot = new TelegramBot(TOKEN, options)
+const bot = new TelegramBot(TOKEN, {polling: true})
 
-bot.setWebHook(`${url}/bot${TOKEN}`)
+//bot.setWebHook(`${url}/bot${TOKEN}`)
 
 const limits = {
 	pm25: {low: 10, high: 25, unit: 'µg/m³'},
