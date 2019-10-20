@@ -9,7 +9,7 @@ const options = {
 	}
 }
 
-const url = process.env.APP_URL
+const url = 't.me/sedcxsaebot'
 const bot = new TelegramBot(TOKEN, options)
 
 bot.setWebHook(`${url}/bot${TOKEN}`)
