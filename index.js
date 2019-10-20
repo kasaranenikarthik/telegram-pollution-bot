@@ -1,7 +1,7 @@
 require('dotenv').config()
 const superagent = require('superagent')
 const moment = require('moment')
-const TOKEN = process.env.TELEGRAM_TOKEN
+const TOKEN = '951375933:AAFl8TaOZdwi_KsmDXhvVmeHMtkyoS1q8wc'
 const TelegramBot = require('node-telegram-bot-api')
 const options = {
 	webHook: {
